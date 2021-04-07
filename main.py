@@ -7,7 +7,7 @@ import sqlite3
 
 def main():
 
-    #zadanie 1:
+    #Task_1:
 
     years_range = range(1880, 2019+1)
     temp = []
@@ -24,7 +24,7 @@ def main():
 
     ####################################################
 
-    #zadanie 2:
+    #Task_2:
 
     print("---------- ZADANIE 2 ----------\n")
 
@@ -33,7 +33,7 @@ def main():
 
     ####################################################
 
-    #zadanie 3:
+    #Task_3:
 
     print("---------- ZADANIE 3 ----------\n")
 
@@ -49,7 +49,7 @@ def main():
 
     ####################################################
 
-    #zadanie_4:
+    #Task_4:
     girl_total_births = []
     male_total_births = []
     girl_total_births = girls.pivot_table(girls, index=['year'], aggfunc=sum)
@@ -71,7 +71,7 @@ def main():
 
     ####################################################
 
-    #Zadanie_5:
+    #Task_5:
 
     print("---------- ZADANIE 5 ----------\n")
 
@@ -96,7 +96,7 @@ def main():
 
     ####################################################
 
-    #Zadanie_6:
+    #Task_6:
 
     print("---------- ZADANIE 6 ----------\n")
 
@@ -138,7 +138,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 7
+    #Task_7
 
     print("---------- ZADANIE 7 ----------\n")
 
@@ -218,7 +218,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 8:
+    #Task_8:
 
     print("---------- ZADANIE 8 ----------\n")
 
@@ -256,7 +256,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 9
+    #Task_9
 
     print("---------- ZADANIE 9 ----------\n")
 
@@ -353,7 +353,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 10
+    #Task_10
 
     print("---------- ZADANIE 10 ----------\n")
 
@@ -369,7 +369,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 11
+    #Task_11
 
     print("---------- ZADANIE 11 ----------\n")
 
@@ -437,7 +437,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 12
+    #Task_12
 
     conn = sqlite3.connect("USA_ltper_1x1.sqlite")  # połączenie do bazy danych - pliku
     tables_df = pd.read_sql('SELECT * FROM USA_fltper_1x1 UNION ALL SELECT * FROM USA_mltper_1x1', conn)
@@ -445,7 +445,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 13
+    #Task_13
 
     total_births = allData.pivot_table("birthcount", index=['year'], aggfunc=sum)
 
@@ -465,7 +465,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 14
+    #Task_14
     years_range2 = range(1959,2018)
 
     vec_first_year = []
@@ -483,7 +483,7 @@ def main():
 
     ####################################################
 
-    #Zadanie 15
+    #Task_15
 
     vec_five_year = []
 
